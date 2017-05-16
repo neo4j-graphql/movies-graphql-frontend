@@ -31,6 +31,7 @@ class MovieDetails extends React.Component {
       <div>
       <div>
         <img src={this.props.data.Movie[0].poster}/>
+        <h1>Recommendations:</h1>
       </div>
       <div className='flex flex-wrap justify-center center w-75'>
         {
