@@ -34,7 +34,7 @@ class MovieIndex extends React.Component {
         <Title className='tc pa5'>
           There are {this.props.data.Movie.length} movies in your movie list
         </Title>
-        
+
 
         <div className='flex flex-wrap justiy-center center w-75'>
           {

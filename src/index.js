@@ -9,7 +9,14 @@ import 'tachyons'
 import './index.css'
 
 const client = new ApolloClient({
-  networkInterface: createNetworkInterface({uri: 'http://localhost:7474/graphql/'})
+  networkInterface: createNetworkInterface({
+    uri: 'http://45.55.58.94:7474/graphql/',
+    opts:{
+      headers: {
+        Authorization: "Basic Z3JhcGhxbDpncmFwaHFs"
+      }
+    }
+  })
 })
 
 ReactDOM.render((
